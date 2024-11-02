@@ -1,12 +1,14 @@
 package co.edu.uniquindio.poo;
 
 import java.time.LocalDate;
+import java.util.LinkedList;
 
 public class Envio {
     private String codigo;
     private double totalCosto;
     private Zona zona;
     private LocalDate fechaEnvio;
+    private LinkedList<Paquete> paquetes;
 
     public Envio(String codigo, double totalCosto, Zona zona, LocalDate fechaEnvio) {
         this.codigo = codigo;

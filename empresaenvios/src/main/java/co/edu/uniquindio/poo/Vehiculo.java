@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public class Vehiculo {
+public  abstract class Vehiculo {
     public String placa;
     public String marca;
     public String modelo;
@@ -34,6 +34,9 @@ public class Vehiculo {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+
+    public abstract double calcularCosto();
+    
 
     @Override
     public String toString() {
